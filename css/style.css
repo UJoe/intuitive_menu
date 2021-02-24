@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+body {
+  background-color: #f8ffb8;
+  -webkit-box-shadow: 0px 0px 0px 10px #00dbdc;
+          box-shadow: 0px 0px 0px 10px #00dbdc;
+}
+
+nav {
+  position: fixed;
+  top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  z-index: 1;
+}
+
+#bts_logo {
+  height: 50px;
+  position: absolute;
+  left: 2vw;
+  visibility: inline-flex;
+}
+
+#menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 0;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  margin: 10px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f8ffb8;
+  border: outset 5px #00dbdc;
+  border-radius: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuitem {
+  color: #004E5D;
+  text-align: left;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menuitem:hover {
+  background-color: #00dbdc;
+  color: #f8ffb8;
+  font-weight: bold;
+}
+
+.menuitem:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.menuitem:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#sandwich {
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 60px;
+}
+
+#sandwich:hover {
+  cursor: pointer;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #00dbdc;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #004E5D;
+}
+
+.main .content-1 {
+  background-image: url(../img/top-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  margin-top: -20px;
+}
+
+.main .content-1 .logo {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .content-1 .logo img {
+  width: 330px;
+}
+
+.main .content-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  top: -80vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8ffb800), color-stop(#f8ffb8ad), color-stop(#f8ffb8), color-stop(#f8ffb8), to(#f8ffb8));
+  background-image: linear-gradient(#f8ffb800, #f8ffb8ad, #f8ffb8, #f8ffb8, #f8ffb8);
+  padding-bottom: 300px;
+  margin-bottom: -100vh;
+}
+
+.main .content-2 h2 {
+  font-size: 50px;
+}
+
+.main .content-2 p {
+  font-size: 21px;
+  line-height: 2em;
+  margin-bottom: 50px;
+  margin-right: 30px;
+}
+
+.main .content-2 h2 {
+  position: absolute;
+  display: inline;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.5% 2%;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #00dbdc;
+  color: #d42000;
+}
+
+.main .content-2 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .content-2 img {
+  width: 60px;
+  margin: 7px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.main .content-2 img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.main .content-2 #island_icon {
+  position: absolute;
+  top: 39vh;
+  left: 10%;
+  width: 150px;
+}
+
+.main .content-2 #island_icon:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.main .content-2 #text-content {
+  position: relative;
+  top: 35vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+}
+
+.main .content-2 #text-content h1 {
+  font-size: 50px;
+}
+
+.main .content-2 #text-content p {
+  margin-top: 3%;
+  display: block;
+}
+
+.main .content-2 #text-content p::first-letter {
+  color: #00dbdc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+.main #islands {
+  background-image: url(../img/islands_pic.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  max-height: 100%;
+  /*transform: translateY(-80%);*/
+}
+
+.main #last-pic {
+  background-image: url(../img/pic3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  max-height: 100%;
+}
+
+.main .content-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.main .content-3 h2 {
+  font-size: 50px;
+}
+
+.main .content-3 p {
+  font-size: 21px;
+  line-height: 2em;
+}
+
+.main .bla {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .bla img {
+  width: 100%;
+}
+
+.main .bla svg {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0%;
+  left: 0;
+}
+
+.main .bla svg #_camping-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main .bla svg #_party-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main .bla svg #_fishes-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main .bla svg #_surf-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main .bla svg #_boats-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.main .bla svg #_goal-group_:hover {
+  -webkit-animation-name: "anime";
+          animation-name: "anime";
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+/*
+transform-box: fill-box;
+transform-origin: 50% 50%; 
+*/
+@-webkit-keyframes anime {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes anime {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 1386px) {
+  .main .content-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8ffb800), color-stop(#f8ffb88a), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), to(#f8ffb8));
+    background-image: linear-gradient(#f8ffb800, #f8ffb88a, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  .main #island_icon {
+    margin-left: -50px;
+    width: 100px;
+  }
+  .main .content-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8ffb800), color-stop(#f8ffb8e1), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), to(#f8ffb8));
+    background-image: linear-gradient(#f8ffb800, #f8ffb8e1, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .main #island_icon {
+    display: none;
+  }
+  .main .content-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8ffb800), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), to(#f8ffb8));
+    background-image: linear-gradient(#f8ffb800, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main #island_icon {
+    display: none;
+  }
+  .main .content-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8ffb800), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), color-stop(#f8ffb8), to(#f8ffb8));
+    background-image: linear-gradient(#f8ffb800, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+  }
+}
+/*# sourceMappingURL=style.css.map */

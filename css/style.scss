@@ -1,0 +1,319 @@
+@import "./variables";
+@import "./mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+  background-color: $yellowColor;
+  box-shadow: 0px 0px 0px 10px $blueColor;
+}
+
+nav {
+  position: fixed;
+  top: 4vh;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  z-index: 1;
+}
+
+#bts_logo {
+  height: 50px;
+  position: absolute;
+  left: 2vw;
+  visibility: inline-flex;
+}
+
+#menu {
+  width: fit-content;
+  height: 0;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  margin: 10px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $yellowColor;
+  border: outset 5px $blueColor;
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+.menuitem {
+  color: $fillerTextColor;
+  text-align: left;
+  padding: 20px;
+  font-family: $littleFont;
+  &:hover {
+    background-color: $blueColor;
+    color: $yellowColor;
+    font-weight: bold;
+  }
+}
+.menuitem:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.menuitem:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#sandwich {
+  height: 50px;
+  display: inline-flex;
+  position: absolute;
+  right: 60px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1,h2{
+  font-family: $bigFont;
+  color: $blueColor;
+}
+
+p {
+  font-family: $littleFont;
+  color: $fillerTextColor;
+}
+
+.main{
+  
+  .content-1{
+    background-image: url(../img/top-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    margin-top: -20px;
+
+    .logo{
+      position: absolute;
+      top: 25vh;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 330px
+      }
+    }
+  }
+  .content-2{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 100%;
+
+    h2{
+      font-size: 50px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 2em;
+      margin-bottom: 50px;
+      margin-right: 30px;
+    }
+    top: -80vh;
+    background-image: linear-gradient(#f8ffb800, #f8ffb8ad, #f8ffb8, #f8ffb8, #f8ffb8);
+    padding-bottom: 300px;
+    margin-bottom: -100vh;
+    h2 {
+      position: absolute;
+      display: inline;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.5% 2%;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $blueColor;
+      color: $redColor;
+    }
+    .icons {
+      display: flex;
+      position: absolute;
+      top: 15vh;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+      img {
+        width: 60px;
+        margin: 7px;
+        transition: transform 0.5s;
+        &:hover {
+          transform: scale(1.4);
+        }
+      }
+    #island_icon {
+      position: absolute;
+      top: 39vh;
+      left: 10%;
+      width: 150px;
+      &:hover {
+        transform: none;
+      }
+    }
+    #text-content {
+      position: relative;
+      top: 35vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        margin-top: 3%;
+        display: block;  
+        &::first-letter {
+          @include initialLetter();
+        }
+      }
+    }
+
+  }
+  #islands{
+    background-image: url(../img/islands_pic.png);
+    @include imageCenter();
+    /*transform: translateY(-80%);*/
+  }
+
+  #last-pic{
+    background-image: url(../img/pic3.jpg);
+    @include imageCenter();
+  }
+  .content-3{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 50%;
+
+    h2{
+      font-size: 50px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 2em;
+    }
+  }
+  .bla {
+    position: relative;
+    display: flex;
+    img {
+      width: 100%;
+    }
+    svg {
+      position: absolute;
+      display: flex;
+      top: 0%;
+      left: 0;
+      #_camping-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 1.5s;
+        }
+      }
+      #_party-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 1.5s;
+        }
+      }
+      #_fishes-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 1.5s;
+        }
+      }
+      #_surf-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 1.5s;
+        }
+      }
+      #_boats-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 2s;
+        }
+      }
+      #_goal-group_ {
+        &:hover {
+          animation-name: "anime";
+          animation-duration: 2s;
+        }
+      }
+    }
+  }
+}
+
+/*
+transform-box: fill-box;
+transform-origin: 50% 50%; 
+*/
+
+@keyframes anime {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 1386px) {
+  .main {
+    .content-2 {
+      background-image: linear-gradient(#f8ffb800, #f8ffb88a, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+      }
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  .main {
+    #island_icon {
+      margin-left: -50px;
+      width: 100px;
+    }
+    .content-2 {
+      background-image: linear-gradient(#f8ffb800, #f8ffb8e1, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+      }
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .main {
+    #island_icon {
+      display: none;
+    }
+    .content-2 {
+      background-image: linear-gradient(#f8ffb800, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+      }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    #island_icon {
+      display: none;
+    }
+    .content-2 {
+      background-image: linear-gradient(#f8ffb800, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8, #f8ffb8);
+      }
+  }
+}

@@ -1,0 +1,28 @@
+@mixin initialLetter {
+	color: $blueColor;
+	font-family: $bigFont;
+  font-size: 80px;
+  font-weight: 900;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+@mixin fillerText {
+/*display: block;
+  position: absolute; -- kivettem, hogy újrafelhasználható legyen - Ádám*/
+  width: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 21px;
+  line-height: 2em;
+}
+
+@mixin imageCenter{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  max-height: 100%;
+}
